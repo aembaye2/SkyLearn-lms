@@ -62,15 +62,27 @@ If you would like to contribute, simply begin by implementing one from the list 
 
 ```bash
 git clone https://github.com/SkyCascade/SkyLearn.git
+
 ```
 
 - Create and activate a python virtual environment
+
+```bash
+python3 -m venv .venv
+#This creates a hidden folder named .venv in your project.
+# Activate the virtual environment
+source .venv/bin/activate
+```
 
 ```bash
 pip install -r requirements.txt
 ```
 
 - Create `.env` file inside the root directory
+
+```bash
+cp .env.example .env
+```
 
 - Copy and paste everything in the `.env.example` file into the `.env` file. Don't forget to customize the variable values
 

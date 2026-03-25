@@ -28,7 +28,9 @@ SECRET_KEY = config(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", default=True, cast=bool)
 
-ALLOWED_HOSTS = ["127.0.0.1", "adilmohak1.pythonanywhere.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", "adilmohak1.pythonanywhere.com"]
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8000", "https://localhost:8000", "https://127.0.0.1:8000"]
 
 # change the default user models to our custom model
 AUTH_USER_MODEL = "accounts.User"
